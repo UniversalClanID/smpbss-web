@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jadwal SAT Praktik · SMP Brawijaya Smart School</title>
+<meta name="description" content="Jadwal Sumatif Akhir Semester Gasal Praktik SMP Brawijaya Smart School Tahun Pelajaran 2026/2027">
+<meta name="theme-color" content="#070b18">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<canvas id="partikel" aria-hidden="true"></canvas>
+<header class="topbar">
+<a class="brand" href="#" aria-label="SMP Brawijaya Smart School">
+<span class="logo">BSS</span>
+<span class="brand-t"><b>SMP Brawijaya</b><small>Smart School</small></span>
+</a>
+<nav class="aksi">
+<button id="btnLegenda" class="btn" type="button">Legenda</button>
+<button id="btnBagikan" class="btn" type="button">Bagikan</button>
+<button id="btnCetak" class="btn" type="button">Cetak</button>
+<button id="btnTema" class="btn tema" type="button" aria-label="Ganti tema"><span class="mentari"></span></button>
+</nav>
+</header>
+<main class="wadah">
+<section class="hero">
+<div class="hero-teks">
+<span class="lencana">Tahun Pelajaran 2026/2027</span>
+<h1>Jadwal Sumatif Akhir Semester Gasal <em>Praktik</em></h1>
+<p>Pantau jadwal praktik dan mata pelajaran kelas 7A sampai 9E, lengkap dengan penanda kegiatan yang sedang berlangsung.</p>
+<div class="status" id="status"></div>
+</div>
+<div class="jam-kartu">
+<div class="jam-label">Waktu WIB</div>
+<div class="jam" id="jam">00:00:00</div>
+<div class="jam-tgl" id="jamTgl"></div>
+</div>
+</section>
+<section class="kontrol">
+<div class="tabs" id="tabs" role="tablist"></div>
+<div class="filter">
+<div class="seg" id="segTingkat"></div>
+<label class="cari"><input id="cari" type="search" placeholder="Cari kelas atau mapel" autocomplete="off"></label>
+</div>
+<div class="chips" id="chips"></div>
+</section>
+<section class="statistik" id="statistik"></section>
+<section id="view" class="view" aria-live="polite"></section>
+</main>
+<footer class="kaki">SMP Brawijaya Smart School · Sumatif Akhir Semester Gasal 2026/2027</footer>
+<dialog id="legenda">
+<div class="dlg">
+<div class="dlg-kepala"><h2>Legenda</h2><button id="tutup" class="btn" type="button">Tutup</button></div>
+<div id="legendaIsi"></div>
+</div>
+</dialog>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
